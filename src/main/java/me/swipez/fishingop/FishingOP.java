@@ -1,5 +1,7 @@
 package me.swipez.fishingop;
 
+import me.swipez.fishingop.listeners.ScrollUseListener;
+import me.swipez.fishingop.scrolls.ScrollManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import me.swipez.fishingop.Metrics;
 
@@ -9,14 +11,21 @@ public final class FishingOP extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-        getCommand("fishop").setExecutor(new FishingCommand(this));
-        getCommand("fishop").setTabCompleter(new CommandComplete());
+
+        // Listeners
         getServer().getPluginManager().registerEvents(new AnvilClick(), this);
         getServer().getPluginManager().registerEvents(new FishingListener(this), this);
+        getServer().getPluginManager().registerEvents(new ScrollUseListener(), this);
+
+        // Config
         getConfig().options().copyDefaults();
         saveDefaultConfig();
+
+        // Metrics
         new Metrics(this, 10666);
+
+        //Recipes
+        ScrollManager.initRecipes(this);
     }
 
     @Override
