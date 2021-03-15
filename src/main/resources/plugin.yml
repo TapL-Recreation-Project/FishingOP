@@ -1,0 +1,9 @@
+name: FishingOP
+version: ${project.version}
+main: me.swipez.fishingop.FishingOP
+api-version: 1.16
+authors: [ notnotnotswipez ]
+commands:
+  fishop:
+    usage: /fishop <start/stop>
+    description: Starts and stops the OP Fishing challenge
