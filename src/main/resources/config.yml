@@ -1,94 +1,71 @@
-fallitems:
-  - enchanted_golden_apple
-  - enchanted_golden_apple
-  - ender_pearl
-  - golden_apple
-  - golden_apple
-  - golden_apple
-  - diamond_block
-  - emerald_block
-  - gold_block
-  - iron_block
-  - iron_block
-  - iron_block
-  - enchanting_table
-  - enchanting_table
-  - obsidian
-  - obsidian
-  - diamond
-  - diamond
-  - gold_ingot
-  - gold_ingot
-  - enchanted_book
-  - enchanted_book
-  - enchanted_book
-  - enchanted_book
-  - potion
-  - potion
-  - potion
-  - potion
-  - emerald
-  - emerald
-  - netherite_ingot
-  - anvil
-  - experience_bottle
-  - experience_bottle
-  - experience_bottle
-  - bookshelf
-  - tnt
-  - tnt
-  - elytra
-  - firework_rocket
-  - firework_rocket
-  - totem_of_undying
-  - totem_of_undying
-  - totem_of_undying
-fallitemscount:
-  - 1
-  - 1
-  - 3
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 16
-  - 16
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 16
-  - 16
-  - 16
-  - 16
-  - 16
-  - 16
-  - 1
-  - 64
-  - 64
-  - 1
-  - 1
-  - 1
-enchantslist:
+drop_items:
+  enchanted_golden_apple:
+    relative_chance: 2
+    amount: 1
+  ender_pearl:
+    relative_chance: 1
+    amount: 3
+  golden_apple:
+    relative_chance: 3
+    amount: 1
+  diamond_block:
+    relative_chance: 1
+    amount: 1
+  emerald_block:
+    relative_chance: 1
+    amount: 1
+  gold_block:
+    relative_chance: 1
+    amount: 1
+  iron_block:
+    relative_chance: 3
+    amount: 1
+  enchanting_table:
+    relative_chance: 2
+    amount: 1
+  obsidian:
+    relative_chance: 2
+    amount: 16
+  diamond:
+    relative_chance: 2
+    amount: 1
+  gold_ingot:
+    relative_chance: 2
+    amount: 1
+  enchanted_book:
+    relative_chance: 4
+    amount: 1
+  potion:
+    relative_chance: 4
+    amount: 1
+  emerald:
+    relative_chance: 2
+    amount: 1
+  netherite_ingot:
+    relative_chance: 1
+    amount: 1
+  anvil:
+    relative_chance: 1
+    amount: 1
+  experience_bottle:
+    relative_chance: 3
+    amount: 16
+  bookshelf:
+    relative_chance: 1
+    amount: 16
+  tnt:
+    relative_chance: 2
+    amount: 16
+  elytra:
+    relative_chance: 1
+    amount: 1
+  firework_rocket:
+    relative_chance: 2
+    amount: 64
+  totem_of_undying:
+    relative_chance: 3
+    amount: 1
+enchants_list:
   - sharpness
   - infinity
   - flame
@@ -98,7 +75,7 @@ enchantslist:
   - efficiency
   - knockback
   - protection
-peffects:
+potion_effects:
   - speed
   - increase_damage
   - fire_resistance
