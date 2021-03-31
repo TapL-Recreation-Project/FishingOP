@@ -18,7 +18,7 @@ drop_items:
     relative_chance: 1
     amount: 1
   iron_block:
-    relative_chance: 1
+    relative_chance: 3
     amount: 1
   enchanting_table:
     relative_chance: 2
